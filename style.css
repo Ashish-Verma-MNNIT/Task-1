@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 9px;
+    font-family: cursive;
+}
+@media screen and (max-width:1000px) {
+        .intro{
+            flex-direction: column;
+        }
+        #More{
+            flex-direction: column;
+        }
+}
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 6px;
+    }
+}
+@media screen and (max-width:760px) and (min-width:480px) {
+    html{
+        font-size: 8px;
+    }
+}
+.introImg{
+    margin:1rem 2rem 1rem 0.4rem;
+    padding:0.8rem;
+    width: 100%;
+    flex: 2;
+}
+.intro{
+    display: flex;
+    justify-content: stretch;
+}
+.text{
+    display: block;
+    font-size: 2rem;
+    margin: 1rem 0.4rem 1rem 2rem;
+    padding:0.8rem;
+    flex: 1;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(152, 218, 218);
+    font-size: 1.5rem;
+}
+#heading{
+    background-color: rgb(64, 66, 68);
+    color: white;
+    font-weight: 500;
+    font-size: 5rem;
+    margin: 1rem 0.4rem;
+    text-align: center;
+}
+.subHeading{
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 0.4rem 0.4rem;
+}
+.nav{
+    list-style-type: none;
+    position: sticky;
+    top:0.1rem;
+    z-index: 10;
+    padding: 0;
+    display: flex;
+    background-color: rgb(68, 72, 77);
+    color: white;
+    text-align: center;
+    margin: 2rem 0.4rem;
+}
+.drop a{
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 0.4rem 0;
+}
+.drop a:hover{
+    background-color: rgb(6, 85, 74);
+    color: antiquewhite;
+    border: 0.1rem solid white;
+}
+.items{
+    font-size: 2.5rem;
+    flex: auto;
+    position: relative;
+    border: 0.1rem solid rgb(248, 246, 246);
+
+}
+.links{
+    color: white;
+}
+.drop{
+    background-color: rgb(89, 134, 85);
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.items:hover .drop{
+    display: block;
+}
+.items:hover .nav{
+    margin-bottom: 10rem;
+}
+
+
+.images{
+    display: flex;
+    height: 24rem;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 0.3rem 0.4rem;
+    margin-bottom: 10rem;
+}
+
+.yoga{
+    height: 18rem;
+    border: 0.2rem solid rgb(152, 218, 218);
+}
+.caption{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: wavy;
+    font-style: italic;
+}
+
+.img{
+    position: relative;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s;
+    background-color: rgb(5, 5, 5);
+  }
+
+.img:hover .overlay{
+    opacity: 0.7;
+}
+.zoomImg{
+    display: block;
+    width:10rem;
+    height:10rem;
+}
+.img:hover{
+    cursor: pointer;
+    border: 0.2rem solid white;
+}
+
+footer{
+    background-color: blue;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: monospace;
+    padding: 0.5rem;
+    margin-bottom: 4rem;
+}
+footer a{
+    color: white;
+    font-family: monospace;
+}
+#More{
+    font-size: 2.5rem;
+    display: flex;
+    background-color: rgb(68, 72, 77);
+    justify-content: center;
+    margin: 2rem 0;
+}
+#More a{
+    flex: auto;
+    color: white;
+    text-align: center;
+    padding: .5rem 0;
+}
+#More a:hover{
+    border:0.2rem solid white;
+}
