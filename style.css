@@ -72,6 +72,9 @@ body{
     text-align: center;
     margin: 2rem 0.4rem;
 }
+li a{
+    display: block;
+}
 .drop a{
     display: block;
     color: white;
