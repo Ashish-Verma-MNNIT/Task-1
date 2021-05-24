@@ -3,7 +3,7 @@
 }
 html{
     font-size: 8px;
-    font-family: cursive;
+    font-family: 'Reggae One', cursive;
 }
 @media screen and (max-width:1000px) {
         .intro{
@@ -52,13 +52,13 @@ body{
     color: white;
     font-weight: 500;
     font-size: 5rem;
-    margin: 1rem 0.4rem;
+    margin: 1rem auto;
     text-align: center;
 }
 .subHeading{
     text-align: center;
     font-size: 4rem;
-    margin: 3rem 0.4rem 0.4rem;
+    margin: 3rem auto;
 }
 .nav{
     list-style-type: none;
@@ -70,7 +70,7 @@ body{
     background-color: rgb(68, 72, 77);
     color: white;
     text-align: center;
-    margin: 2rem 0.4rem;
+    margin: 2rem auto;
 }
 
 .drop a{
